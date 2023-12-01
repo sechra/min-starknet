@@ -13,7 +13,7 @@ fn __setup__() -> felt252 {
     let prepared = prepare(class_hash, @constructor_calldata).unwrap();
 
     // start prank with a new address
-    let owner_address = 123;
+    let owner_address = 12;
     start_prank(owner_address, prepared.contract_address).unwrap();
 
     // deploy contract
